@@ -1,5 +1,4 @@
-```yaml
-version: '3.8'
+version: "3.8"
 
 services:
   web:
@@ -14,4 +13,3 @@ services:
       - APP_ENV=development
       - LOG_LEVEL=debug
     command: poetry run uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-```
